@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VELORA - Modern Mediterranean Restaurant">
+    <title>VELORA | Mediterranean Restaurant</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header" id="header">
+    <nav class="navbar container">
+
+        <a href="#home" class="logo">VELORA</a>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#specials">Specials</a></li>
+            <li><a href="#reservation">Reservation</a></li>
+        </ul>
+
+        <a href="#reservation" class="nav-cta">Reserve a Table</a>
+
+        <button class="menu-button" id="menuButton" aria-label="Open menu">
+            ☰
+        </button>
+
+    </nav>
+</header>
+
+<main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <p class="eyebrow">MODERN MEDITERRANEAN CUISINE</p>
+
+            <h1>
+                A Taste Beyond
+                <span>Ordinary.</span>
+            </h1>
+
+            <p class="hero-text">
+                Mediterranean tradition meets contemporary cuisine.
+                Discover exceptional ingredients, refined flavours and
+                an unforgettable dining experience.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#reservation" class="btn btn-outline">Reserve a Table</a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+
+        <div class="container about-grid">
+
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=85"
+                    alt="Elegant restaurant interior"
+                >
+            </div>
+
+            <div class="about-content">
+
+                <p class="section-label">OUR STORY</p>
+
+                <h2>
+                    Tradition,
+                    <span>Reimagined.</span>
+                </h2>
+
+                <p>
+                    VELORA combines the warmth of Mediterranean hospitality
+                    with a contemporary approach to fine dining.
+                </p>
+
+                <p>
+                    Seasonal ingredients, elegant presentation and carefully
+                    crafted flavours come together to create a memorable experience.
+                </p>
+
+                <div class="features">
+
+                    <div>
+                        <strong>Fresh</strong>
+                        <span>Ingredients</span>
+                    </div>
+
+                    <div>
+                        <strong>Modern</strong>
+                        <span>Cuisine</span>
+                    </div>
+
+                    <div>
+                        <strong>Elegant</strong>
+                        <span>Atmosphere</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU -->
+    <section class="section menu-section" id="menu">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="section-label">DISCOVER</p>
+                <h2>Our Menu</h2>
+                <p>A modern interpretation of Mediterranean cuisine.</p>
+            </div>
+
+            <div class="menu-tabs">
+
+                <button class="menu-tab active" data-category="starters">
+                    Starters
+                </button>
+
+                <button class="menu-tab" data-category="mains">
+                    Main Courses
+                </button>
+
+                <button class="menu-tab" data-category="desserts">
+                    Desserts
+                </button>
+
+                <button class="menu-tab" data-category="drinks">
+                    Drinks
+                </button>
+
+            </div>
+
+
+            <div class="menu-list">
+
+                <!-- STARTERS -->
+
+                <article class="menu-item" data-category="starters">
+                    <div>
+                        <h3>Burrata & Heritage Tomato</h3>
+                        <p>Burrata, tomato, basil oil and toasted sourdough.</p>
+                    </div>
+                    <span>₺420</span>
+                </article>
+
+                <article class="menu-item" data-category="starters">
+                    <div>
+                        <h3>Charred Octopus</h3>
+                        <p>Octopus, lemon potato, herbs and olive oil.</p>
+                    </div>
+                    <span>₺540</span>
+                </article>
+
+                <article class="menu-item" data-category="starters">
+                    <div>
+                        <h3>Roasted Aubergine</h3>
+                        <p>Smoked aubergine, tahini and pomegranate.</p>
+                    </div>
+                    <span>₺350</span>
+                </article>
+
+
+                <!-- MAINS -->
+
+                <article class="menu-item hidden" data-category="mains">
+                    <div>
+                        <h3>Mediterranean Sea Bass</h3>
+                        <p>Sea bass, seasonal greens and lemon butter.</p>
+                    </div>
+                    <span>₺890</span>
+                </article>
+
+                <article class="menu-item hidden" data-category="mains">
+                    <div>
+                        <h3>Slow Cooked Lamb</h3>
+                        <p>Tender lamb, smoked yoghurt and herb potatoes.</p>
+                    </div>
+                    <span>₺960</span>
+                </article>
+
+                <article class="menu-item hidden" data-category="mains">
+                    <div>
+                        <h3>Wild Mushroom Risotto</h3>
+                        <p>Arborio rice, wild mushrooms and aged parmesan.</p>
+                    </div>
+                    <span>₺620</span>
+                </article>
+
+
+                <!-- DESSERTS -->
+
+                <article class="menu-item hidden" data-category="desserts">
+                    <div>
+                        <h3>Pistachio Tiramisu</h3>
+                        <p>Mascarpone, espresso, pistachio and cocoa.</p>
+                    </div>
+                    <span>₺390</span>
+                </article>
+
+                <article class="menu-item hidden" data-category="desserts">
+                    <div>
+                        <h3>Dark Chocolate</h3>
+                        <p>Chocolate crémeux, sea salt and vanilla ice cream.</p>
+                    </div>
+                    <span>₺410</span>
+                </article>
+
+
+                <!-- DRINKS -->
+
+                <article class="menu-item hidden" data-category="drinks">
+                    <div>
+                        <h3>VELORA Citrus</h3>
+                        <p>Citrus, rosemary, tonic and Mediterranean herbs.</p>
+                    </div>
+                    <span>₺260</span>
+                </article>
+
+                <article class="menu-item hidden" data-category="drinks">
+                    <div>
+                        <h3>Berry & Basil</h3>
+                        <p>Mixed berries, basil, lime and sparkling water.</p>
+                    </div>
+                    <span>₺280</span>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SPECIALS -->
+    <section class="section specials" id="specials">
+
+        <div class="container">
+
+            <div class="section-heading">
+                <p class="section-label">CHEF'S SELECTION</p>
+                <h2>Signature Dishes</h2>
+            </div>
+
+            <div class="dish-grid">
+
+                <article class="dish-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=85"
+                        alt="Mediterranean dish"
+                    >
+
+                    <div class="dish-info">
+                        <small>CHEF'S SPECIAL</small>
+                        <h3>Mediterranean Garden</h3>
+                        <p>Seasonal vegetables, herbs and citrus dressing.</p>
+                        <strong>₺680</strong>
+                    </div>
+
+                </article>
+
+
+                <article class="dish-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=85"
+                        alt="VELORA signature dish"
+                    >
+
+                    <div class="dish-info">
+                        <small>SIGNATURE</small>
+                        <h3>VELORA Selection</h3>
+                        <p>A contemporary interpretation of Mediterranean flavours.</p>
+                        <strong>₺920</strong>
+                    </div>
+
+                </article>
+
+
+                <article class="dish-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85"
+                        alt="Seasonal restaurant dish"
+                    >
+
+                    <div class="dish-info">
+                        <small>SEASONAL</small>
+                        <h3>Summer Coast</h3>
+                        <p>Fresh seasonal produce with aromatic herbs.</p>
+                        <strong>₺740</strong>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESERVATION -->
+    <section class="section reservation" id="reservation">
+
+        <div class="container reservation-grid">
+
+            <div class="reservation-content">
+
+                <p class="section-label">RESERVATIONS</p>
+
+                <h2>
+                    Your Table
+                    <span>Awaits.</span>
+                </h2>
+
+                <p>
+                    Reserve your table and experience contemporary
+                    Mediterranean dining at VELORA.
+                </p>
+
+                <div class="hours">
+
+                    <div>
+                        <span>Monday – Thursday</span>
+                        <strong>17:00 – 23:00</strong>
+                    </div>
+
+                    <div>
+                        <span>Friday – Saturday</span>
+                        <strong>17:00 – 00:00</strong>
+                    </div>
+
+                    <div>
+                        <span>Sunday</span>
+                        <strong>16:00 – 22:00</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form class="reservation-form" id="reservationForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input
+                            id="name"
+                            type="text"
+                            placeholder="Your name"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            id="email"
+                            type="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input id="date" type="date" required>
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="time">Time</label>
+
+                        <select id="time" required>
+                            <option value="">Select time</option>
+                            <option>18:00</option>
+                            <option>19:00</option>
+                            <option>20:00</option>
+                            <option>21:00</option>
+                            <option>22:00</option>
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="guests">Guests</label>
+
+                    <select id="guests" required>
+                        <option value="">Number of guests</option>
+                        <option>1 Guest</option>
+                        <option>2 Guests</option>
+                        <option>3 Guests</option>
+                        <option>4 Guests</option>
+                        <option>5 Guests</option>
+                        <option>6 Guests</option>
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">Special Request</label>
+
+                    <textarea
+                        id="message"
+                        rows="4"
+                        placeholder="Optional request..."
+                    ></textarea>
+
+                </div>
+
+
+                <button class="btn btn-primary submit-button" type="submit">
+                    Request Reservation
+                </button>
+
+                <p class="form-message" id="formMessage"></p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div class="container footer-content">
+
+        <a href="#home" class="logo">VELORA</a>
+
+        <p>
+            Fictional restaurant website created as a portfolio project.
+        </p>
+
+        <p>© 2026 VELORA</p>
+
+    </div>
+
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
